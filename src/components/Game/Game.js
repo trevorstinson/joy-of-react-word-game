@@ -14,10 +14,7 @@ function Game() {
   const [previousGuesses, setPreviousGuesses] = React.useState([]);
 
   function handleSetPreviousGuesses(nextGuess) {
-    setPreviousGuesses([
-      ...previousGuesses,
-      { id: crypto.randomUUID(), label: nextGuess },
-    ]);
+    setPreviousGuesses([...previousGuesses, nextGuess]);
   }
 
   return (
