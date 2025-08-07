@@ -1,12 +1,12 @@
 import React from 'react';
 import { range } from '../../utils';
 
-function Guess({ word }) {
+function Guess({ guess }) {
   return (
     <p className="guess">
       {range(5).map((index) => (
         <span key={index} className="cell">
-          {word && word[index]}
+          {guess && guess[index]}
         </span>
       ))}
     </p>

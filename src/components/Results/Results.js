@@ -7,7 +7,7 @@ function Results({ results }) {
   return (
     <div className="guess-results">
       {range(NUM_OF_GUESSES_ALLOWED).map((index) => (
-        <Guess key={index} word={results[index]}></Guess>
+        <Guess key={index} guess={results[index]}></Guess>
       ))}
     </div>
   );
