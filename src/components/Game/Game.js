@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { sample } from '../../utils';
 import { WORDS } from '../../data';
+import { sample } from '../../utils';
 import GuessInput from '../GuessInput/GuessInput';
 import Results from '../Results/Results';
 
